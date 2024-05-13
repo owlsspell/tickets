@@ -9,8 +9,11 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.(png|jpg)$/,
-                type: 'asset'
+                test: /\.(png|jpg)$/i,
+                type: 'asset',
+                use: [
+                    'url-loader',
+                ]
             }
         ]
     }
