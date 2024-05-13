@@ -2,6 +2,7 @@
   "name": "tickets",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://owlsspell.github.io/tickets/",
   "dependencies": {
     "@reduxjs/toolkit": "^2.2.4",
     "@testing-library/jest-dom": "^5.14.1",
@@ -26,7 +27,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint:styles": "stylelint \"**/*.scss\""
+    "lint:styles": "stylelint \"**/*.scss\"",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^6.1.1",
     "postcss": "^8.4.38",
     "sass": "^1.77.0",
     "stylelint": "^16.5.0",

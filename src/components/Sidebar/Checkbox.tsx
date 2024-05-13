@@ -1,3 +1,5 @@
+import icon from "../../images/icons/checkbox.png"
+
 type CheckboxType = {
     id: number, label: string, isChecked: boolean, value: string | number, setIsChecked: (id: number, value: string | number) => void,
 }
@@ -11,7 +13,7 @@ const Checkbox = ({ id, label, isChecked, setIsChecked, value }: CheckboxType) =
                     checked={isChecked}
                     onChange={() => setIsChecked(id, value)}
                 />
-                <img src="images/icons/checkbox.png" alt="" />
+                <img src={icon} alt="" />
                 <span>{label}</span>
             </label>
         </div>
