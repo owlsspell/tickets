@@ -5,5 +5,13 @@ module.exports = {
         new StyleLintPlugin({
             files: ['**/*.{htm,html,css,sss,less,scss,sass}'],
         })
-    ]
+    ],
+    module: {
+        rules: [
+            {
+                test: /\.(png|jpg)$/,
+                type: 'asset'
+            }
+        ]
+    }
 }
