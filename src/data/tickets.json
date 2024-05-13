@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "price": "13 300",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "34г 15хв",
+        "transplants": ["HKG"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "16г 30хв",
+        "transplants": ["HKG"]
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "price": "15 100",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "17г 15хв",
+        "transplants": ["HKG", "JNB"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "40г 30хв",
+        "transplants": ["HKG", "JNB"]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "price": "15 800",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "20г 15хв",
+        "transplants": ["HKG"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "13г 30хв",
+        "transplants": ["HKG"]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "price": "21 400",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "21г 15хв",
+        "transplants": ["HKG", "JNB", "JNB"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "12г 30хв",
+        "transplants": ["HKG", "JNB", "JNB"]
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "price": "23 900",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "11г 15хв",
+        "transplants": []
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "9г 30хв",
+        "transplants": []
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "price": "13 300",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "34г 15хв",
+        "transplants": ["HKG"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "16г 30хв",
+        "transplants": ["HKG"]
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "price": "14 500",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "34г 15хв",
+        "transplants": ["HKG", "JNB"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "16г 30хв",
+        "transplants": ["HKG", "JNB"]
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "price": "15 800",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "34г 15хв",
+        "transplants": ["HKG", "JNB"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "16г 30хв",
+        "transplants": ["HKG", "JNB"]
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "price": "12 700",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "34г 15хв",
+        "transplants": ["HKG", "JNB"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "16г 30хв",
+        "transplants": ["HKG", "JNB"]
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "price": "16 200",
+    "directions": [
+      {
+        "id": 1,
+        "direction": "LHR – DXB",
+        "time": "10:45 – 08:00",
+        "travelTime": "34г 15хв",
+        "transplants": ["HKG", "JNB"]
+      },
+      {
+        "id": 2,
+        "direction": "DXB – LHR",
+        "time": "11:20 – 00:50",
+        "travelTime": "16г 30хв",
+        "transplants": ["HKG", "JNB"]
+      }
+    ]
+  }
+]

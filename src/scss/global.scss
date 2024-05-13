@@ -1,0 +1,314 @@
+// colors
+$primary: #2196F3;
+$background: #F3F7FA;
+$white: #fff;
+$font-size: 12px;
+$font-bold: 60;
+$checkbox-border: #9ABBCE;
+$hover-item: #F1FCFF;
+$gray-border: #DFE5EC;
+$gray-text: #A0B0B9;
+$dark-text: #4A4A4A;
+$cursor: url('../images/Cursor.png') auto;
+$disabled: #2196f37a;
+
+// Global
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+    overflow-y: scroll;
+}
+
+%container-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+%white-block {
+    border-radius: 5px;
+    box-shadow: 0 2px 8px 0 #0000001A;
+    background: $white ;
+}
+
+.container {
+    margin: auto;
+    max-width: 960px;
+    padding-bottom: 50px;
+}
+
+// Page
+.page {
+    background: $background ;
+    min-height: 100vh;
+}
+
+.page__body {
+    display: flex;
+    justify-content: center;
+}
+
+// Header
+.header {
+    @extend %container-center;
+
+    padding: 50px 0;
+
+    img {
+        border-radius: 50%;
+        transition: 0.5s;
+        cursor: $cursor ;
+
+        &:hover {
+            box-shadow: 0 8px 11px 0 #37688E40;
+        }
+    }
+
+}
+
+// Sidebar 
+.sidebar {
+    @extend %white-block;
+
+    width: 230px;
+    padding: 14px 0 10px;
+    margin-right: 40px;
+    font-size: $font-size + 1;
+    line-height: 20px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 20px;
+
+    @media (width <=830px) {
+        margin-right: 5px;
+    }
+
+    .sidebar__title {
+        font-weight: $font-bold;
+        padding: 0 20px 8px;
+    }
+
+    .checkbox__wrapper {
+        cursor: $cursor ;
+
+        &:hover {
+            transition: 0.5s;
+            background-color: $hover-item ;
+        }
+
+        label {
+            padding: 10px 20px;
+            position: relative;
+            display: flex;
+            align-items: center;
+            cursor: $cursor ;
+        }
+
+        input {
+            cursor: $cursor ;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            width: 20px;
+            height: 20px;
+            border-radius: 2px;
+            border: 1px solid $checkbox-border ;
+            outline: none;
+            margin-right: 10px;
+
+        }
+
+        img {
+            position: absolute;
+            left: 28px;
+            top: 19px;
+            display: none;
+        }
+
+        &.checkbox-checked {
+            img {
+                display: block;
+            }
+
+            input {
+                border-color: $primary;
+            }
+        }
+    }
+}
+
+
+// Filters
+.filters__container {
+    padding: 0 15px;
+
+    .filters {
+        @extend %white-block;
+
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 18px;
+        overflow: hidden;
+
+        @media (width <=520px) {
+            flex-direction: column;
+        }
+    }
+
+
+}
+
+.filter {
+    border-right: 1px solid $gray-border ;
+    padding: 15px;
+    font-size: $font-size ;
+    text-transform: uppercase;
+    font-weight: $font-bold;
+    width: 100%;
+    text-align: center;
+
+    @media (width <=520px) {
+        border-right: 0;
+        border-bottom: 1px solid $gray-border ;
+        width: auto;
+    }
+
+    &.filter-active {
+        background-color: $primary ;
+        color: $white ;
+    }
+
+    &:last-child {
+        border-right: 0;
+    }
+
+    &:hover {
+        background-color: $primary ;
+        color: $white ;
+        cursor: $cursor ;
+
+    }
+}
+
+// Cards
+.tickets__container {
+    width: 500px;
+
+    @media (width <=520px) {
+        width: auto;
+    }
+
+    .tickets__list {
+        .ticket__card {
+            @extend %white-block;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            padding: 20px;
+            margin-bottom: 22px;
+            cursor: $cursor ;
+
+            img {
+                @media (width <=520px) {
+                    width: 80px;
+                }
+            }
+        }
+
+        .ticket__price {
+            margin: auto 0;
+            grid-column: 1 / span 2;
+            font-size: $font-size * 2;
+            color: $primary ;
+            font-weight: $font-bold ;
+
+        }
+
+    }
+
+    .tickets__text-info {
+        font-size: $font-size + 5;
+        min-height: 50vh;
+    }
+
+
+    .direction__title {
+        color: $gray-text ;
+        font-size: $font-size ;
+        line-height: 18px;
+        text-transform: uppercase;
+    }
+
+    .direction__text {
+        color: $dark-text ;
+        font-size: $font-size + 2;
+        line-height: 21px;
+        font-weight: $font-bold ;
+    }
+
+}
+
+.showMore__button {
+    width: 100%;
+    background-color: $primary ;
+    border: 0;
+    color: $white ;
+    padding: 15px 20px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: $font-size ;
+    cursor: $cursor ;
+
+    &:disabled {
+        background-color: $disabled ;
+    }
+}
+
+// Burger button
+
+.bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 36px;
+    top: 36px;
+
+    @media (width <=540px) {
+        top: 20px;
+        left: 20px;
+    }
+
+    .bm-burger-bars {
+        background-color: $primary;
+    }
+}
+
+.bm-overlay {
+    top: 0;
+    left: 0;
+}
+
+.bm-menu-wrap {
+    top: 80px;
+    left: 0;
+    max-width: -webkit-max-content;
+    max-width: -moz-max-content;
+    max-width: max-content;
+}
+
+.bm-cross-button {
+    right: 20px !important;
+    top: 31px !important;
+
+}
+
+.bm-cross {
+    background: $primary
+}

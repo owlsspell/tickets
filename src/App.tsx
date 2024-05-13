@@ -1,24 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Filters from './components/Filters/Filters';
+import Sidebar from './components/Sidebar/Sidebar';
+import TicketsList from './components/Tiсkets/TicketsList';
+import './scss/global.scss';
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="page">
+      <div className='container'>
+        <header className="header">
+          <a href='/'>
+            <img src="/images/Logo.svg" alt="" />
+          </a>
+        </header>
+        <div className='page__body'>
+          <Sidebar />
+          <div className='filters__container'>
+            <Filters />
+            <div className='tickets__container'>
+              <TicketsList />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
